@@ -1,0 +1,57 @@
+#homeMain {
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.747);
+  background-image: url(../Assets/background.png);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#homeMain div {
+  text-align: center;
+}
+
+#homeMain div h1 {
+  color: white;
+  font-size: 7vmin;
+  font-weight: bolder;
+}
+#homeMain div p {
+  color: white;
+  font-size: 3vmin;
+}
+#homeMain div button {
+  background: linear-gradient(to right, black 0%, red 50%, black 100%);
+  background-size: 200%;
+  padding: 1.5vmin 3vmin;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 4vmin;
+  margin-top: 3vmin;
+  transition: background-position 1s;
+}
+
+#homeMain div button:hover {
+  background-position: right;
+  color: white;
+}
+#signIn {
+  background: linear-gradient(to right, black 0%, red 50%, black 100%);
+  background-size: 200%;
+  padding: 1.5vmin 3vmin;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 2.5vmin;
+  margin-top: 3vmin;
+  transition: background-position 1s;
+}
+
+#signIn:hover {
+  background-position: right;
+  color: white;
+}

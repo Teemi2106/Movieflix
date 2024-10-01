@@ -1,0 +1,90 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background-color: #141414;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+  color: white;
+  position: relative;
+}
+
+.modal-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.modal-info {
+  margin-top: 20px;
+}
+
+.modal-info h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.modal-info p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.modal-watch-button {
+  background-color: #e50914;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.movie-rating {
+  display: flex;
+  align-items: center;
+}
+
+.stars {
+  display: flex;
+  margin-left: 10px;
+}
+
+.star {
+  font-size: 20px;
+  color: #ffb400; /* Netflix orange/golden color for stars */
+  margin-right: 4px;
+}
+
+.full-star {
+  color: #ffb400; /* Full star */
+}
+
+.half-star {
+  color: #ffb400; /* Half-star */
+}
+
+.empty-star {
+  color: #444; /* Empty star */
+}

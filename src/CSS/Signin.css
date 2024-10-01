@@ -1,0 +1,142 @@
+/* Full-screen flex container to center the form */
+#signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgba(20, 20, 20, 0.7);
+  background-image: url(../Assets/background.png);
+  background-blend-mode: multiply;
+  font-family: "Helvetica Neue", Arial, sans-serif; /* Clean font */
+  padding: 20px; /* Padding for small screens */
+}
+
+/* Styling the form container */
+#signin-form {
+  background-color: rgba(0, 0, 0, 0.75); /* Transparent black form background */
+  padding: 40px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+}
+
+/* Headings */
+#signin-form h2 {
+  font-size: 2rem;
+  color: #fff; /* White for Netflix-style contrast */
+  margin-bottom: 20px;
+}
+
+/* Label style */
+#signin-form label {
+  font-size: 1.1rem;
+  color: #b3b3b3; /* Netflix gray color */
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* Styling the input fields */
+#signin-form input[type="email"],
+#signin-form input[type="password"],
+#signin-form input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  outline: none;
+  background-color: #333; /* Dark input fields */
+  color: white;
+  transition: background-color 0.3s;
+}
+
+/* Highlight border on focus */
+#signin-form input[type="email"]:focus,
+#signin-form input[type="password"]:focus,
+#signin-form input[type="text"]:focus {
+  background-color: #454545; /* Slight color change on focus */
+}
+
+/* Styling the submit button */
+#signin-form input[type="submit"] {
+  background: linear-gradient(to right, black 0%, red 50%, black 100%);
+  background-size: 200%;
+  padding: 1.5vmin 3vmin;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 2.5vmin;
+  margin-top: 3vmin;
+  transition: background-position 1s;
+  width: 100%;
+}
+
+/* Hover effect for submit button */
+#signin-form input[type="submit"]:hover {
+  background-position: right;
+  color: white;
+}
+
+/* Error message */
+.error-message {
+  color: #e50914; /* Netflix red for error messages */
+  font-size: 0.9rem;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Optional: Add some padding between input fields */
+#signin-form input {
+  margin-top: 5px;
+}
+
+/* Link to switch between forms */
+#signin-form p {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #b3b3b3;
+}
+
+/* Link hover effect */
+#signin-form a {
+  color: #e50914;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#signin-form a:hover {
+  color: #f40612;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+  #signin-container {
+    padding: 20px;
+  }
+
+  #signin-form {
+    width: 100%;
+    padding: 30px;
+  }
+
+  #signin-form h2 {
+    font-size: 1.5rem;
+  }
+
+  #signin-form label {
+    font-size: 1rem;
+  }
+
+  #signin-form input {
+    font-size: 1rem;
+  }
+
+  #signin-form input[type="submit"] {
+    font-size: 1rem;
+  }
+}

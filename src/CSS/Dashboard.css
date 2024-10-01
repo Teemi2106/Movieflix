@@ -1,0 +1,153 @@
+/* Dashboard styles */
+#canvas {
+  background-color: #05000f;
+  min-height: 100vh;
+  color: white;
+  padding: 2rem;
+}
+
+#dashboard {
+  max-width: 1200px;
+  margin: auto;
+  height: fit-content;
+}
+
+#dashboardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+#searchForm {
+  display: flex;
+  align-items: center;
+  flex: 0.8;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #333;
+  margin-right: 10px;
+  color: black;
+  width: 100%;
+}
+
+.search-button {
+  padding: 10px 15px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #f40612;
+}
+
+#logout {
+  background: linear-gradient(to right, black 0%, red 50%, black 100%);
+  background-size: 200%;
+  padding: 1.5vmin 3vmin;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 2.5vmin;
+  margin-top: 3vmin;
+  transition: background-position 1s;
+  cursor: pointer;
+}
+#logout:hover {
+  background-position: right;
+  color: white;
+}
+
+#misc {
+  margin-top: 2rem;
+  font-size: 3vmin;
+  display: flex;
+  flex-direction: column;
+}
+
+.hb {
+  background-color: #1c1b1f;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hb:hover {
+  background-color: #ff4d4f;
+}
+
+#moviesSection {
+  margin-top: 2rem;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.movie-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.movie-image {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+/* Movie Info on hover */
+.movie-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  padding: 10px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+}
+
+.movie-card:hover .movie-info {
+  opacity: 1;
+}
+
+.movie-info h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.movie-info p {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+#btDiv {
+  margin-top: 0.5rem;
+}
+
+#btDiv button {
+  margin-right: 5px;
+}
